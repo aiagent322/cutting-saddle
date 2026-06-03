@@ -14,6 +14,10 @@
 <meta property="og:image" content="https://www.cuttingsaddles.com/images/images/certified-used-saddles-logo.jpg">
 <meta property="og:site_name" content="CuttingSaddles.com">
 <meta name="twitter:card" content="summary_large_image">
+<style>
+  .dir-grid { display:grid; grid-template-columns:1fr; gap:16px; text-align:left; }
+  @media (min-width:480px) { .dir-grid { grid-template-columns:1fr 1fr; gap:12px; } }
+</style>
 </head>
 <body>
 <nav class="site-nav">
@@ -46,7 +50,7 @@
   <div class="container">
     <div style="max-width:620px;margin:0 auto;">
       <div style="background:var(--deep-forest);padding:32px 24px;margin-bottom:24px;text-align:center;">
-        <img src="/images/certified-used-saddles-logo.jpg" alt="Certified Used Saddles" style="width:110px;height:auto;border-radius:50%;background:white;padding:6px;margin:0 auto 16px;display:block;">
+        <img src="/images/certified-used-saddles-logo.jpg" alt="Certified Used Saddles" style="width:110px;height:auto;border-radius:50%;background:white;padding:6px;margin:0 auto 16px;display:block;" loading="lazy">
         <div style="font-family:var(--font-display);font-size:1.5rem;color:var(--parchment);margin-bottom:4px;">David Solum</div>
         <div style="font-family:var(--font-label);font-size:9px;letter-spacing:.18em;text-transform:uppercase;color:var(--amber);margin-bottom:24px;">Certified Used Saddle Specialist</div>
         <div style="display:flex;flex-direction:column;gap:12px;align-items:center;margin-bottom:20px;">
@@ -88,7 +92,7 @@
 
       <div style="background:var(--deep-forest);padding:20px;text-align:center;">
         <div style="font-family:var(--font-label);font-size:9px;letter-spacing:.15em;text-transform:uppercase;color:var(--amber);margin-bottom:10px;">Site Directory</div>
-        <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;text-align:left;">
+        <div class="dir-grid">
           <div>
             <div style="font-family:var(--font-label);font-size:9px;letter-spacing:.12em;text-transform:uppercase;color:var(--hay);margin-bottom:10px;">Learn</div>
             <div style="display:flex;flex-direction:column;gap:8px;">
