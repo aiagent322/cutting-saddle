@@ -85,9 +85,9 @@ a:hover { color: var(--forest); }
 @media (min-width: 640px) { .sponsor-pipe { display: inline; } }
 
 /* ── SECTIONS ── */
-.section { padding: 40px 0; }
-@media (min-width: 640px) { .section { padding: 56px 0; } }
-@media (min-width: 1024px) { .section { padding: 72px 0; } }
+.section { padding: 20px 0; }
+@media (min-width: 640px) { .section { padding: 24px 0; } }
+@media (min-width: 1024px) { .section { padding: 28px 0; } }
 .section-alt { background: var(--parchment); }
 .section-dark { background: var(--deep-forest); }
 .section-forest { background: var(--forest); }
@@ -185,12 +185,12 @@ a:hover { color: var(--forest); }
 @media (min-width: 1024px) { .footer-grid { grid-template-columns: 2fr 1fr 1fr 1fr 1fr; gap: 32px; margin-bottom: 48px; } }
 .footer-brand { font-family: var(--font-display); font-size: 1.2rem; color: var(--parchment); margin-bottom: 10px; }
 .footer-brand span { color: var(--amber-light); }
-.footer-tagline { font-size: .9rem; line-height: 1.65; color: var(--warm-gray); margin-bottom: 16px; }
-.footer-col h4 { font-family: var(--font-label); font-size: 10px; letter-spacing: .18em; text-transform: uppercase; color: var(--hay); margin-bottom: 12px; }
+.footer-tagline { font-size: .9rem; line-height: 1.65; color: #fff; font-weight: 700; margin-bottom: 16px; }
+.footer-col h4 { font-family: var(--font-label); font-size: 10px; letter-spacing: .18em; text-transform: uppercase; color: #fff; font-weight: 700; margin-bottom: 12px; }
 .footer-col ul { list-style: none; }
 .footer-col li { margin-bottom: 7px; }
-.footer-col a { color: var(--warm-gray); font-size: .9rem; transition: color .2s; }
+.footer-col a { color: #fff; font-weight: 700; font-size: .9rem; transition: color .2s; }
 .footer-col a:hover { color: var(--amber-light); }
 .footer-bottom { border-top: 1px solid rgba(255,255,255,.06); padding-top: 20px; display: flex; flex-direction: column; gap: 8px; font-size: .8rem; text-align: center; }
 @media (min-width: 640px) { .footer-bottom { flex-direction: row; justify-content: space-between; align-items: center; text-align: left; } }
-.footer-bottom p { color: rgba(138,121,104,.7); }
+.footer-bottom p { color: #fff; font-weight: 700; }
