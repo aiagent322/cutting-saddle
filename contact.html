@@ -119,6 +119,101 @@
     </div>
   </div>
 </section>
+
+<!-- CONTACT FORM SECTION -->
+<style>
+.cf-section{background:#0F2117;padding:40px 0;border-top:3px solid #B8770A}
+.cf-inner{max-width:720px;margin:0 auto;padding:0 16px}
+@media(min-width:640px){.cf-inner{padding:0 24px}}
+.cf-title{font-family:var(--font-display,'Playfair Display',Georgia,serif);font-size:clamp(1.5rem,4vw,2.2rem);color:#fff;font-weight:700;margin-bottom:8px}
+.cf-sub{font-size:.93rem;color:rgba(245,237,216,.75);max-width:540px;line-height:1.7;margin-bottom:28px}
+.cf-grid{display:grid;grid-template-columns:1fr;gap:14px}
+@media(min-width:600px){.cf-grid{grid-template-columns:1fr 1fr}}
+.cf-full{grid-column:1/-1}
+.cf-field{display:flex;flex-direction:column;gap:5px}
+.cf-field label{font-family:var(--font-label,'Oswald',sans-serif);font-size:9px;letter-spacing:.15em;text-transform:uppercase;color:rgba(245,237,216,.6)}
+.cf-field input,.cf-field select,.cf-field textarea{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.14);color:#fff;padding:11px 13px;font-size:.9rem;outline:none;transition:border-color .2s;-webkit-appearance:none;border-radius:0;width:100%;font-family:inherit}
+.cf-field input:focus,.cf-field select:focus,.cf-field textarea:focus{border-color:#B8770A}
+.cf-field select option{background:#1a1410;color:#fff}
+.cf-field textarea{resize:vertical;min-height:90px}
+.cf-submit{margin-top:6px}
+.cf-submit button{background:#B8770A;color:#fff;font-family:var(--font-label,'Oswald',sans-serif);font-size:12px;letter-spacing:.15em;text-transform:uppercase;padding:14px 32px;border:none;cursor:pointer;transition:background .2s;width:100%}
+@media(min-width:480px){.cf-submit button{width:auto}}
+.cf-submit button:hover{background:rgba(255,255,255,.15)}
+.cf-note{font-size:9px;color:rgba(245,237,216,.3);margin-top:10px;line-height:1.6;font-family:var(--font-label,'Oswald',sans-serif);letter-spacing:.04em}
+</style>
+
+<div class="cf-section" id="contact">
+  <div class="cf-inner">
+    <p style="font-family:var(--font-label,'Oswald',sans-serif);font-size:9px;letter-spacing:.25em;text-transform:uppercase;color:#B8770A;margin-bottom:10px">Contact David Solum</p>
+    <h2 class="cf-title">Ask About a Saddle</h2>
+    <p class="cf-sub">Call, text, or email David directly &mdash; or use this form and he will get back to you. 40+ years evaluating western saddles. No pressure, honest answers.</p>
+    <div style="display:flex;flex-wrap:wrap;gap:12px;margin-bottom:28px">
+      <a href="tel:4177931403" style="font-family:var(--font-label,'Oswald',sans-serif);font-size:11px;letter-spacing:.1em;text-transform:uppercase;background:#B8770A;color:#fff;padding:12px 20px;text-decoration:none;display:inline-flex;align-items:center;gap:8px">&#128222; (417) 793-1403</a>
+      <a href="mailto:davidsolumsales@gmail.com" style="font-family:var(--font-label,'Oswald',sans-serif);font-size:11px;letter-spacing:.1em;text-transform:uppercase;background:rgba(255,255,255,.12);color:#fff;padding:12px 20px;text-decoration:none;display:inline-flex;align-items:center;gap:8px">&#9993; davidsolumsales@gmail.com</a>
+    </div>
+    <form action="mailto:davidsolumsales@gmail.com" method="POST" enctype="text/plain">
+      <div class="cf-grid">
+        <div class="cf-field">
+          <label for="cf-name">Full Name *</label>
+          <input type="text" id="cf-name" name="Name" required placeholder="Your name">
+        </div>
+        <div class="cf-field">
+          <label for="cf-email">Email Address *</label>
+          <input type="email" id="cf-email" name="Email" required placeholder="you@example.com">
+        </div>
+        <div class="cf-field">
+          <label for="cf-phone">Phone / WhatsApp</label>
+          <input type="tel" id="cf-phone" name="Phone" placeholder="Your number">
+        </div>
+        <div class="cf-field">
+          <label for="cf-interest">I Am Interested In</label>
+          <select id="cf-interest" name="Interest">
+            <option value="">Select one</option>
+            <option>Certified used cutting saddle</option>
+            <option>New Superior Saddlery saddle</option>
+            <option>Saddle valuation / consignment</option>
+            <option>Want-list a specific saddle</option>
+            <option>General question</option>
+          </select>
+        </div>
+        <div class="cf-field">
+          <label for="cf-seat">Seat Size (if known)</label>
+          <select id="cf-seat" name="Seat Size">
+            <option value="">Not sure</option>
+            <option>15"</option>
+            <option>15.5"</option>
+            <option>16"</option>
+            <option>16.5"</option>
+            <option>17"</option>
+            <option>17.5"</option>
+          </select>
+        </div>
+        <div class="cf-field">
+          <label for="cf-budget">Budget Range (USD)</label>
+          <select id="cf-budget" name="Budget">
+            <option value="">Select range</option>
+            <option>Under $1,500</option>
+            <option>$1,500 &ndash; $3,000</option>
+            <option>$3,000 &ndash; $5,000</option>
+            <option>$5,000 &ndash; $7,500</option>
+            <option>Over $7,500</option>
+            <option>Flexible</option>
+          </select>
+        </div>
+        <div class="cf-field cf-full">
+          <label for="cf-message">Message</label>
+          <textarea id="cf-message" name="Message" placeholder="Tell David about your horse, what you are looking for, your competition level, or any questions you have. The more detail, the better he can help."></textarea>
+        </div>
+      </div>
+      <div class="cf-submit">
+        <button type="submit">Send Message to David &rarr;</button>
+      </div>
+      <p class="cf-note">Submitting opens your email client with this message pre-addressed to David. You can review and send from there.</p>
+    </form>
+  </div>
+</div>
+
 <footer class="site-footer">
   <div class="container">
     <div class="footer-grid">
