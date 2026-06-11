@@ -6,7 +6,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,800;1,400;1,600&family=Crimson+Pro:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Oswald:wght@300;400;500;600&display=swap');
 
 :root {
-  --forest:      #5C2E0A;
+  --forest:      #5C2E0A; /* network brown */
   --deep-forest: #3D1F0A;
   --amber:       #B8770A;
   --amber-light: #D4930F;
