@@ -191,7 +191,6 @@ a:hover { color: var(--forest); }
 .footer-col li { margin-bottom: 7px; }
 .footer-col a { color: #fff; font-weight: 700; font-size: .9rem; transition: color .2s; }
 .footer-col a:hover { color: var(--amber-light); }
-.footer-bottom { border-top: 1px solid rgba(255,255,255,.06); padding-top: 20px; display: flex; flex-direction: column; gap: 8px; font-size: .8rem; text-align: center; }
-@media (min-width: 640px) { .footer-bottom { flex-direction: row; justify-content: space-between; align-items: center; text-align: left; } }
+.footer-bottom { border-top: 1px solid rgba(255,255,255,.06); padding-top: 20px; display: flex; flex-direction: column; gap: 8px; font-size: .8rem; text-align: center; align-items: center; }
 .footer-bottom p { color: #fff; font-weight: 700; }
 .header-bb { display:flex; align-items:center; margin-left:auto; flex-shrink:0; }
