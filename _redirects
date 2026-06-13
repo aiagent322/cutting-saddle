@@ -1,4 +1,5 @@
 # Cloudflare Pages redirects
+https://www.cuttingsaddles.com/* https://cuttingsaddles.com/:splat 301
 /home /index.html 301
 /saddles /used-saddles.html 301
 /guide /buying-guide.html 301
