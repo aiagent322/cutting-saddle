@@ -175,7 +175,7 @@
 <script>
   var h = document.getElementById('hamburger');
   var n = document.getElementById('navLinks');
-  if (h) h.addEventListener('click', function() { n.classList.toggle('open'); });
+  if (h) h.addEventListener('click', function() { n.classList.toggle('open'); h.setAttribute('aria-expanded', n.classList.contains('open')); });
   document.querySelectorAll('.faq-q').forEach(function(q) {
     q.addEventListener('click', function() { this.closest('.faq-item').classList.toggle('open'); });
   });
