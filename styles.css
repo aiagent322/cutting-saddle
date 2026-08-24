@@ -24,7 +24,7 @@
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 html { scroll-behavior: smooth; }
-body { font-family: var(--font-body); font-size: 16px; line-height: 1.75; background: var(--cream); color: var(--charcoal); overflow-x: hidden; }
+body { font-family: var(--font-body); font-size: 16px; line-height: 1.75; background: var(--cream); color: var(--charcoal); overflow-x: hidden; min-width: 320px; }
 img { max-width: 100%; display: block; }
 a { color: var(--amber); text-decoration: none; transition: color .2s; }
 a:hover { color: var(--forest); }
@@ -72,7 +72,7 @@ a:hover { color: var(--forest); }
   .nav-links a:hover, .nav-links a.active { border-left-color: transparent; border-bottom-color: var(--amber-light); }
   .nav-cta { margin: 0; padding: 8px 14px !important; height: auto !important; border-bottom: none !important; }
 }
-.hamburger { display: flex; flex-direction: column; gap: 5px; cursor: pointer; padding: 8px; background: none; border: none; }
+.hamburger { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 5px; cursor: pointer; padding: 8px; min-width: 44px; min-height: 44px; background: none; border: none; }
 .hamburger span { width: 22px; height: 2px; background: var(--hay); display: block; transition: all .3s; }
 @media (min-width: 1024px) { .hamburger { display: none; } }
 
